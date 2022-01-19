@@ -1,0 +1,1489 @@
+{
+	"info": {
+		"_postman_id": "7c625f4b-13c7-4db0-9d97-4ed43d9f54ab",
+		"name": "DataAPIv19_106",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "metadata",
+			"item": [
+				{
+					"name": "Product info",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{server}}/fmi/data/{{version}}/productInfo",
+							"protocol": "https",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"fmi",
+								"data",
+								"{{version}}",
+								"productInfo"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Product info",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{server}}/fmi/data/{{version}}/productInfo",
+									"protocol": "https",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"fmi",
+										"data",
+										"{{version}}",
+										"productInfo"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 19 Jan 2022 13:49:01 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "ADS-FMS-M1.local"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response\": {\n        \"productInfo\": {\n            \"name\": \"FileMaker Data API Engine\",\n            \"buildDate\": \"12/08/2021\",\n            \"version\": \"19.4.2.204\",\n            \"dateFormat\": \"MM/dd/yyyy\",\n            \"timeFormat\": \"HH:mm:ss\",\n            \"timeStampFormat\": \"MM/dd/yyyy HH:mm:ss\"\n        }\n    },\n    \"messages\": [\n        {\n            \"code\": \"0\",\n            \"message\": \"OK\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Database Names",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{server}}/fmi/data/{{version}}/databases",
+							"protocol": "https",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"fmi",
+								"data",
+								"{{version}}",
+								"databases"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Database Names",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{server}}/fmi/data/{{version}}/databases",
+									"protocol": "https",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"fmi",
+										"data",
+										"{{version}}",
+										"databases"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 19 Jan 2022 13:49:12 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Length",
+									"value": "171"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ab-miSKbm9K7TkyCsJyhbwRKTUZh1A\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "ADS-FMS-M1.local"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response\": {\n        \"databases\": [\n            {\n                \"name\": \"ADS\"\n            },\n            {\n                \"name\": \"ADS_DATA\"\n            },\n            {\n                \"name\": \"ADS_geodata\"\n            },\n            {\n                \"name\": \"ADS_INTRO\"\n            },\n            {\n                \"name\": \"ADS_mailbox\"\n            }\n        ]\n    },\n    \"messages\": [\n        {\n            \"code\": \"0\",\n            \"message\": \"OK\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Layout Names",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/layouts",
+							"protocol": "https",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"fmi",
+								"data",
+								"{{version}}",
+								"databases",
+								"{{database}}",
+								"layouts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Layout Names",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/layouts",
+									"protocol": "https",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"fmi",
+										"data",
+										"{{version}}",
+										"databases",
+										"{{database}}",
+										"layouts"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 19 Jan 2022 13:49:25 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Length",
+									"value": "379"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"17b-yBoOeP844Lfflj3NpzyvSlylTxw\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "ADS-FMS-M1.local"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response\": {\n        \"layouts\": [\n            {\n                \"name\": \"Edicio\",\n                \"table\": \"\"\n            },\n            {\n                \"name\": \"Llista\",\n                \"table\": \"\"\n            },\n            {\n                \"name\": \"debug\",\n                \"table\": \"\"\n            },\n            {\n                \"name\": \"Edicio Copy\",\n                \"table\": \"\"\n            },\n            {\n                \"name\": \"ADS_WALLS\",\n                \"table\": \"\"\n            },\n            {\n                \"name\": \"ADS_MAIL\",\n                \"table\": \"\"\n            },\n            {\n                \"name\": \"Client\",\n                \"table\": \"\"\n            },\n            {\n                \"name\": \"Message\",\n                \"table\": \"\"\n            },\n            {\n                \"name\": \"Screenshots\",\n                \"table\": \"\"\n            },\n            {\n                \"name\": \"web_ads_intro\",\n                \"table\": \"\"\n            }\n        ]\n    },\n    \"messages\": [\n        {\n            \"code\": \"0\",\n            \"message\": \"OK\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Script Names",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/scripts",
+							"protocol": "https",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"fmi",
+								"data",
+								"{{version}}",
+								"databases",
+								"{{database}}",
+								"scripts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Script Names",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/scripts",
+									"protocol": "https",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"fmi",
+										"data",
+										"{{version}}",
+										"databases",
+										"{{database}}",
+										"scripts"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 19 Jan 2022 13:49:35 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Length",
+									"value": "515"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"203-CCJEKm7qOxjJSjwbgBz2kp+Obwk\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "ADS-FMS-M1.local"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response\": {\n        \"scripts\": [\n            {\n                \"name\": \"generar_records\",\n                \"isFolder\": false\n            },\n            {\n                \"name\": \"update_dates\",\n                \"isFolder\": false\n            },\n            {\n                \"name\": \"go_today\",\n                \"isFolder\": false\n            },\n            {\n                \"name\": \"-\",\n                \"isFolder\": false\n            },\n            {\n                \"name\": \"marcar cursiva\",\n                \"isFolder\": false\n            },\n            {\n                \"name\": \"delegated_marcar_cursiva\",\n                \"isFolder\": false\n            },\n            {\n                \"name\": \"reset marques\",\n                \"isFolder\": false\n            },\n            {\n                \"name\": \"-\",\n                \"isFolder\": false\n            },\n            {\n                \"name\": \"enter_edit_mode\",\n                \"isFolder\": false\n            },\n            {\n                \"name\": \"enter_list_mode\",\n                \"isFolder\": false\n            },\n            {\n                \"name\": \"save_styled\",\n                \"isFolder\": false\n            }\n        ]\n    },\n    \"messages\": [\n        {\n            \"code\": \"0\",\n            \"message\": \"OK\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Layout Metadata",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/layouts/{{layout}}",
+							"protocol": "https",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"fmi",
+								"data",
+								"{{version}}",
+								"databases",
+								"{{database}}",
+								"layouts",
+								"{{layout}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Layout Metadata",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/layouts/{{layout}}",
+									"protocol": "https",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"fmi",
+										"data",
+										"{{version}}",
+										"databases",
+										"{{database}}",
+										"layouts",
+										"{{layout}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 19 Jan 2022 13:49:43 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"84a-G6FTZBY0LKjKETWJ35TAa+FEN3M\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "ADS-FMS-M1.local"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response\": {\n        \"fieldMetaData\": [\n            {\n                \"name\": \"id\",\n                \"type\": \"normal\",\n                \"displayType\": \"editText\",\n                \"result\": \"number\",\n                \"global\": false,\n                \"autoEnter\": true,\n                \"fourDigitYear\": false,\n                \"maxRepeat\": 1,\n                \"maxCharacters\": 0,\n                \"notEmpty\": true,\n                \"numeric\": false,\n                \"timeOfDay\": false,\n                \"repetitionStart\": 1,\n                \"repetitionEnd\": 1\n            },\n            {\n                \"name\": \"pub_date\",\n                \"type\": \"normal\",\n                \"displayType\": \"editText\",\n                \"result\": \"date\",\n                \"global\": false,\n                \"autoEnter\": false,\n                \"fourDigitYear\": false,\n                \"maxRepeat\": 1,\n                \"maxCharacters\": 0,\n                \"notEmpty\": false,\n                \"numeric\": false,\n                \"timeOfDay\": false,\n                \"repetitionStart\": 1,\n                \"repetitionEnd\": 1\n            },\n            {\n                \"name\": \"description\",\n                \"type\": \"normal\",\n                \"displayType\": \"editText\",\n                \"result\": \"text\",\n                \"global\": false,\n                \"autoEnter\": false,\n                \"fourDigitYear\": false,\n                \"maxRepeat\": 1,\n                \"maxCharacters\": 0,\n                \"notEmpty\": false,\n                \"numeric\": false,\n                \"timeOfDay\": false,\n                \"repetitionStart\": 1,\n                \"repetitionEnd\": 1\n            },\n            {\n                \"name\": \"author\",\n                \"type\": \"normal\",\n                \"displayType\": \"editText\",\n                \"result\": \"text\",\n                \"global\": false,\n                \"autoEnter\": false,\n                \"fourDigitYear\": false,\n                \"maxRepeat\": 1,\n                \"maxCharacters\": 0,\n                \"notEmpty\": false,\n                \"numeric\": false,\n                \"timeOfDay\": false,\n                \"repetitionStart\": 1,\n                \"repetitionEnd\": 1\n            },\n            {\n                \"name\": \"enabled\",\n                \"type\": \"normal\",\n                \"displayType\": \"editText\",\n                \"result\": \"number\",\n                \"global\": false,\n                \"autoEnter\": false,\n                \"fourDigitYear\": false,\n                \"maxRepeat\": 1,\n                \"maxCharacters\": 0,\n                \"notEmpty\": false,\n                \"numeric\": false,\n                \"timeOfDay\": false,\n                \"repetitionStart\": 1,\n                \"repetitionEnd\": 1\n            },\n            {\n                \"name\": \"key_day\",\n                \"type\": \"calculation\",\n                \"displayType\": \"editText\",\n                \"result\": \"number\",\n                \"global\": false,\n                \"autoEnter\": false,\n                \"fourDigitYear\": false,\n                \"maxRepeat\": 1,\n                \"maxCharacters\": 0,\n                \"notEmpty\": false,\n                \"numeric\": false,\n                \"timeOfDay\": false,\n                \"repetitionStart\": 1,\n                \"repetitionEnd\": 1\n            },\n            {\n                \"name\": \"pagina\",\n                \"type\": \"normal\",\n                \"displayType\": \"editText\",\n                \"result\": \"number\",\n                \"global\": false,\n                \"autoEnter\": false,\n                \"fourDigitYear\": false,\n                \"maxRepeat\": 1,\n                \"maxCharacters\": 0,\n                \"notEmpty\": false,\n                \"numeric\": false,\n                \"timeOfDay\": false,\n                \"repetitionStart\": 1,\n                \"repetitionEnd\": 1\n            },\n            {\n                \"name\": \"pagina_book\",\n                \"type\": \"normal\",\n                \"displayType\": \"editText\",\n                \"result\": \"text\",\n                \"global\": false,\n                \"autoEnter\": false,\n                \"fourDigitYear\": false,\n                \"maxRepeat\": 1,\n                \"maxCharacters\": 0,\n                \"notEmpty\": false,\n                \"numeric\": false,\n                \"timeOfDay\": false,\n                \"repetitionStart\": 1,\n                \"repetitionEnd\": 1\n            }\n        ],\n        \"portalMetaData\": {}\n    },\n    \"messages\": [\n        {\n            \"code\": \"0\",\n            \"message\": \"OK\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Old Layout Metadata",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/layouts/{{layout}}/metadata?recordId={recordId}",
+							"protocol": "https",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"fmi",
+								"data",
+								"{{version}}",
+								"databases",
+								"{{database}}",
+								"layouts",
+								"{{layout}}",
+								"metadata"
+							],
+							"query": [
+								{
+									"key": "recordId",
+									"value": "{recordId}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "records",
+			"item": [
+				{
+					"name": "Get records",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/layouts/{{layout}}/records?_offset=1&_limit=20",
+							"protocol": "https",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"fmi",
+								"data",
+								"{{version}}",
+								"databases",
+								"{{database}}",
+								"layouts",
+								"{{layout}}",
+								"records"
+							],
+							"query": [
+								{
+									"key": "_offset",
+									"value": "1"
+								},
+								{
+									"key": "_limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get records",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/layouts/{{layout}}/records?_offset=1&_limit=1",
+									"protocol": "https",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"fmi",
+										"data",
+										"{{version}}",
+										"databases",
+										"{{database}}",
+										"layouts",
+										"{{layout}}",
+										"records"
+									],
+									"query": [
+										{
+											"key": "_offset",
+											"value": "1"
+										},
+										{
+											"key": "_limit",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 19 Jan 2022 13:50:17 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Length",
+									"value": "673"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2a1-lq34/rRmnq4DgdXVW5Rf0gP/gyo\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "ADS-FMS-M1.local"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response\": {\n        \"dataInfo\": {\n            \"database\": \"ADS_INTRO\",\n            \"layout\": \"web_ads_intro\",\n            \"table\": \"ADS_INTRO\",\n            \"totalRecordCount\": 366,\n            \"foundCount\": 366,\n            \"returnedCount\": 1\n        },\n        \"data\": [\n            {\n                \"fieldData\": {\n                    \"id\": 1,\n                    \"pub_date\": \"01/01/2022\",\n                    \"description\": \"Empezamos a comprender que, si queríamos cambiar la situación, debíamos cambiar nosotros mismos. Y que para poder cambiar nosotros efectivamente, debíamos primero cambiar nuestras percepciones.\\r\\r*Todas las referencias pertenecen a \\\"Los 7 hábitos de la gente altamente efectiva\\\".\",\n                    \"author\": \"\",\n                    \"enabled\": 1,\n                    \"key_day\": 738156,\n                    \"pagina\": 21,\n                    \"pagina_book\": \"\"\n                },\n                \"portalData\": {},\n                \"recordId\": \"37\",\n                \"modId\": \"22\"\n            }\n        ]\n    },\n    \"messages\": [\n        {\n            \"code\": \"0\",\n            \"message\": \"OK\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Single Record By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/layouts/{{layout}}/records/{{record_id}}",
+							"protocol": "https",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"fmi",
+								"data",
+								"{{version}}",
+								"databases",
+								"{{database}}",
+								"layouts",
+								"{{layout}}",
+								"records",
+								"{{record_id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Single Record By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/layouts/{{layout}}/records/{{record_id}}",
+									"protocol": "https",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"fmi",
+										"data",
+										"{{version}}",
+										"databases",
+										"{{database}}",
+										"layouts",
+										"{{layout}}",
+										"records",
+										"{{record_id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 19 Jan 2022 13:50:40 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Length",
+									"value": "671"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"29f-WnpBEUA2RIez7wm/O5tbuMyGIQE\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "ADS-FMS-M1.local"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response\": {\n        \"dataInfo\": {\n            \"database\": \"ADS_INTRO\",\n            \"layout\": \"web_ads_intro\",\n            \"table\": \"ADS_INTRO\",\n            \"totalRecordCount\": 366,\n            \"foundCount\": 1,\n            \"returnedCount\": 1\n        },\n        \"data\": [\n            {\n                \"fieldData\": {\n                    \"id\": 1,\n                    \"pub_date\": \"01/01/2022\",\n                    \"description\": \"Empezamos a comprender que, si queríamos cambiar la situación, debíamos cambiar nosotros mismos. Y que para poder cambiar nosotros efectivamente, debíamos primero cambiar nuestras percepciones.\\r\\r*Todas las referencias pertenecen a \\\"Los 7 hábitos de la gente altamente efectiva\\\".\",\n                    \"author\": \"\",\n                    \"enabled\": 1,\n                    \"key_day\": 738156,\n                    \"pagina\": 21,\n                    \"pagina_book\": \"\"\n                },\n                \"portalData\": {},\n                \"recordId\": \"37\",\n                \"modId\": \"22\"\n            }\n        ]\n    },\n    \"messages\": [\n        {\n            \"code\": \"0\",\n            \"message\": \"OK\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create record",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "753fc54185a6b5136c64aaf1fc162a229fbd7146ad4cac743f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fieldData\": {\n        \"author\": \"\",\n        \"enabled\": 1,\n        \"key_day\": 999999,\n        \"pagina\": 221,\n        \"pagina_book\": \"\"\n    }\n}"
+						},
+						"url": {
+							"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/layouts/{{layout}}/records",
+							"protocol": "https",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"fmi",
+								"data",
+								"{{version}}",
+								"databases",
+								"{{database}}",
+								"layouts",
+								"{{layout}}",
+								"records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit record",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"fieldData\": {\n     \"First Name\": \"John\",\n     \"Last Name\": \"Doe\"\n   }\n}"
+						},
+						"url": {
+							"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/layouts/{{layout}}/records/{{recordId}}",
+							"protocol": "https",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"fmi",
+								"data",
+								"{{version}}",
+								"databases",
+								"{{database}}",
+								"layouts",
+								"{{layout}}",
+								"records",
+								"{{recordId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete record",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/layouts/{{layout}}/records/{{recordId}}",
+							"protocol": "https",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"fmi",
+								"data",
+								"{{version}}",
+								"databases",
+								"{{database}}",
+								"layouts",
+								"{{layout}}",
+								"records",
+								"{{recordId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Duplicate Record",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/layouts/{{layout}}/records/{{recordId}}",
+							"protocol": "https",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"fmi",
+								"data",
+								"{{version}}",
+								"databases",
+								"{{database}}",
+								"layouts",
+								"{{layout}}",
+								"records",
+								"{{recordId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find records",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\":[\n    {\"description\": \"comprender\"},\n    {\"enabled\" : 1}],\n  \"limit\": \"1\",\n  \"offset\": \"1\",\n  \"layout.response\": \"Llista\"\n}"
+						},
+						"url": {
+							"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/layouts/{{layout}}/_find",
+							"protocol": "https",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"fmi",
+								"data",
+								"{{version}}",
+								"databases",
+								"{{database}}",
+								"layouts",
+								"{{layout}}",
+								"_find"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Find records",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"query\":[\n    {\"description\": \"comprender\"},\n    {\"enabled\" : 1}],\n  \"limit\": \"1\",\n  \"offset\": \"1\",\n  \"layout.response\": \"Llista\"\n}"
+								},
+								"url": {
+									"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/layouts/{{layout}}/_find",
+									"protocol": "https",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"fmi",
+										"data",
+										"{{version}}",
+										"databases",
+										"{{database}}",
+										"layouts",
+										"{{layout}}",
+										"_find"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 19 Jan 2022 13:51:03 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Length",
+									"value": "589"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"24d-DIWsyf74rAGx5oRRVXv3MMbyoGo\""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "ADS-FMS-M1.local"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"response\": {\n        \"dataInfo\": {\n            \"database\": \"ADS_INTRO\",\n            \"layout\": \"Llista\",\n            \"table\": \"ADS_INTRO\",\n            \"totalRecordCount\": 366,\n            \"foundCount\": 366,\n            \"returnedCount\": 1\n        },\n        \"data\": [\n            {\n                \"fieldData\": {\n                    \"pub_date\": \"01/01/2022\",\n                    \"description\": \"Empezamos a comprender que, si queríamos cambiar la situación, debíamos cambiar nosotros mismos. Y que para poder cambiar nosotros efectivamente, debíamos primero cambiar nuestras percepciones.\\r\\r*Todas las referencias pertenecen a \\\"Los 7 hábitos de la gente altamente efectiva\\\".\"\n                },\n                \"portalData\": {},\n                \"recordId\": \"37\",\n                \"modId\": \"22\"\n            }\n        ]\n    },\n    \"messages\": [\n        {\n            \"code\": \"0\",\n            \"message\": \"OK\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"pm.environment.set(\"token\", jsonData.response.token);",
+									"console.log(\"token\",pm.environment.get(\"token\"));"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{user}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/sessions",
+							"protocol": "https",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"fmi",
+								"data",
+								"{{version}}",
+								"databases",
+								"{{database}}",
+								"sessions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log out",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/sessions/{{token}}",
+							"protocol": "https",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"fmi",
+								"data",
+								"{{version}}",
+								"databases",
+								"{{database}}",
+								"sessions",
+								"{{token}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Validate Session",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{server}}/fmi/data/{{version}}/validateSessions",
+							"protocol": "https",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"fmi",
+								"data",
+								"{{version}}",
+								"validateSessions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "container",
+			"item": [
+				{
+					"name": "Upload to Container Field",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "753fc54185a6b5136c64aaf1fc162a229fbd7146ad4cac743f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "upload",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/layouts/{{layout}}/records/{{record_id}}/{{containerFieldName}}",
+							"protocol": "https",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"fmi",
+								"data",
+								"{{version}}",
+								"databases",
+								"{{database}}",
+								"layouts",
+								"{{layout}}",
+								"records",
+								"{{record_id}}",
+								"{{containerFieldName}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "globals",
+			"item": [
+				{
+					"name": "Set Global Fields",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "29b02c8e2c95a5e8a8b07078989ab25b4645dec2741e973cf37c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"globalFields\":[{\"Global Field\":\"1\"}]\n}"
+						},
+						"url": {
+							"raw": "https://{{server}}/fmi/data/{{version}}/databases/{{database}}/globals",
+							"protocol": "https",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"fmi",
+								"data",
+								"{{version}}",
+								"databases",
+								"{{database}}",
+								"globals"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "protocol",
+			"value": "https",
+			"type": "string"
+		},
+		{
+			"key": "server",
+			"value": "192.168.30.130",
+			"type": "string"
+		},
+		{
+			"key": "version",
+			"value": "vLatest",
+			"type": "string"
+		},
+		{
+			"key": "user",
+			"value": "admin",
+			"type": "string"
+		},
+		{
+			"key": "password",
+			"value": "wakawaka",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "database",
+			"value": "ADS_INTRO",
+			"type": "string"
+		},
+		{
+			"key": "layout",
+			"value": "web_ads_intro",
+			"type": "string"
+		},
+		{
+			"key": "record_id",
+			"value": "37",
+			"type": "string"
+		},
+		{
+			"key": "containerFieldName",
+			"value": "bin_content",
+			"type": "string"
+		}
+	]
+}
